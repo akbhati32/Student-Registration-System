@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aslam Bhati" >
+    <meta name="keywords" content="Student Registration System" >
+    <meta name="description" content="Register Students, Career Oriented Courses" >
+    <title>Student Registeration Stystem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"/>
+</head>
+<body>
+    <header>    <!-- Heading & Brief Description-->
+        <h1>Student Registration System</h1>
+        <p>Hey folks, Welcome to a user-friendly platform designed to streamline the enrollment process for Career Oriented Courses. It allows students to create accounts, fill out application forms, edit and deleting the record.</p>
+    </header>
+    <main class="wrapper">
+        <section class="box-wrap regForm">  <!-- Registration Form -->
+            <form target="" name="regForm">
+                <label for="stName">Student Name</label>
+                <input type="text" id="stName" name="name" class="text-box" required>
+                <label for="course">Select Course</label>
+                <select id="course" class="text-box">
+                    <option></option>
+                    <option>Full Stack Development</option>
+                    <option>Data Science</option>
+                    <option>Digital Marketing</option>
+                    <option>HR Management</option>
+                    <option>UI/UX Design</option>
+                    <option>Electric Vehicle</option>
+                    <option>Financial Modelling</option>
+                    <option>Supply Chain Logistics</option>
+                </select><br>
+                <label for="stMail">Email ID</label>
+                <input type="email" id="stMail" name="mail" class="text-box" required>
+                <label for="stContact">Contact Number</label>
+                <input type="text" id="stContact" name="contact" class="text-box" required>
+                <span class="btn-align">
+                    <button type="button" id="register" class="btn">Register</button>
+                    <button type="reset" id="reset" class="btn">Reset</button>
+                </span>
+            </form>
+        </section>
+        <section class="box-wrap" id="list">    <!-- Registered Student Record List -->
+            <div class="record">
+                <span class="name">Name</span>
+                <span class="course">Course</span>
+                <span class="mail">Email ID</span>
+                <span class="contact">Contact</span>
+                <span class="btns">
+                    
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>  
+</body>
+</html>
